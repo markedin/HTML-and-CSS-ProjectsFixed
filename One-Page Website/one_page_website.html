@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>All about Subaru!</title>
+		<link rel="stylesheet" href="./CSS/one_page_website.css">
+		<script src = "JS/one_page_website.js" defer></script>
+
+	</head>
+	<body>
+		<p><a href="#Pictures"> Go to Pictures</a></p>
+		<p><a href="#Videos"> Go to Videos</a></p>
+		<p><a href="#Contact"> Go to Contact Us</a></p>
+			<h1>Home</h1>
+			<p>This website showcases some cool subaru builds.</p>
+			<h2 style="text-align:center">Lightbox</h2>
+
+		<div class="row">
+		<div class="column">
+			<img src="subaru1thumb.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+		</div>
+		<div class="column">
+			<img src="subaru2thumb.jpeg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+		</div>
+		</div>
+
+		<div id="myModal" class="modal">
+		<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+
+				<div class="mySlides">
+					<div class="numbertext">1 / 2</div>
+					<img src="subaru1.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">2 / 2</div>
+					<img src="subaru2.jpeg" style="width:100%">
+				</div>
+			
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+				<div class="caption-container">
+					<p id="caption"></p>
+				</div>
+
+
+				<div class="column">
+					<img class="demo cursor" src="subaru1thumb.jpg" style="width:100%" onclick="currentSlide(1)" alt="White Subaru">
+				</div>
+				<div class="column">
+					<img class="demo cursor" src="subaru2thumb.jpeg" style="width:100%" onclick="currentSlide(2)" alt="Grey Subaru">
+				</div>
+			</div>
+		</div>
+		<!--<h1 id="Pictures">Pictures</h1>
+		<p>Here are some pictures of cool subaru builds.<p>
+		<img src="subaru_1.jpg" alt="First subaru picture"></img>
+		<img src="subaru_2.jpeg" alt="Second subaru picture"></img>-->
+		
+		<h1 id="Videos"> Videos</h1>
+		<p>Here is a cool video of a built Subaru STi launching.</p>
+		
+		<iframe width="560" height="315" 
+		src="https://www.youtube.com/embed/N2VwT35wSRE" 
+		title="YouTube video player" frameborder="0" 
+		allow="accelerometer; autoplay; clipboard-write; 
+		encrypted-media; gyroscope; picture-in-picture" 
+		allowfullscreen></iframe>
+		
+		<h1 id="Contact"> Contact us</h1>
+		<form action="" method="post">
+			<input class="rsvp" type="text" value="First Name">
+			<input class="rsvp" type="text" value="Last Name">
+			<input class="rsvp" type="text" value="Email Address">
+			<input class="rsvp" type="text" value="Phone Number">
+				<div class="form-spacer">
+					<label class="terms">Terms and Conditions</label>
+				</div>
+				<div>
+					<input type="submit" value="Submit">
+				</div>
+		</form>
+		
+	
+	
+	
+	
+	
+	</body>
+	
+	<footer>
+	<p>Super cool subarus.</p>
+	</footer>
+</html>
